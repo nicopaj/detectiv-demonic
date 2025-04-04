@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detectiv Demonic</title>
+  <link rel="stylesheet" href="style.css" />
+  <audio id="music" src="muzica/dark_ambient.mp3" loop autoplay></audio>
+</head>
+<body>
+  <div id="intro" class="screen active">
+    <h1>Detectiv Demonic</h1>
+    <p>Un oraș blestemat. O crimă neelucidată. Tu ești ultima speranță...</p>
+    <button onclick="startGame()">Începe Investigația</button>
+  </div>
+
+  <div id="chapter" class="screen">
+    <h2 id="chapterTitle"></h2>
+    <p id="storyText"></p>
+    <div id="choices"></div>
+  </div>
+
+  <div id="gameOver" class="screen">
+    <h2>Ești Pierdut...</h2>
+    <p>Investigația a eșuat. Demonii au câștigat.</p>
+    <button onclick="restartGame()">Reîncearcă</button>
+  </div>
+
+  <div id="victory" class="screen">
+    <h2>Ai Descoperit Adevărul</h2>
+    <p>Umbra a fost alungată. Orașul e liber… pentru acum.</p>
+    <button onclick="restartGame()">Joacă din nou</button>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
